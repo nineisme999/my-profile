@@ -1,0 +1,100 @@
+:root {
+    --textcolor: #dadada;
+}
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--textcolor);
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+ul p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--textcolor);
+    font-weight: 300;
+}
+body section{
+    margin: 0;
+    height: 100vh;
+
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(background/tumblr_cd722849f2b52e1d3675a9d3194ab19f_030316f6_540.webp);
+    background-size: cover;
+    background-position: right center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section ul1 img{
+    border-radius: 50%;
+    transition: 100ms;
+}
+
+section  ul2 img{
+    transition: 100ms;
+}
+
+body section img:hover{
+    scale: 1.1;
+}
+
+nav {
+    color: var(--textcolor);
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2em;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+ul2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+@media(max-width: 550px){
+    nav ul{
+        flex-direction: column;
+    }
+
+    ul2 {
+        flex-direction: column;
+        margin-top: 1em;
+        gap: 0;
+    }
+}
